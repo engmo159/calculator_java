@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Cities</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+  </head>
+  <body>
+    <div>
+      <div class="text-center text-5xl font-extrabold mt-4">
+        <p class="">Choose A City !!!</p>
+      </div>
+      <!-- {/* buttons */} -->
+      <div class="flex justify-evenly py-8">
+        <button
+          class="text-green-700 font-bold px-8 border-2 border-green-700 rounded-lg hover:text-white hover:bg-green-700 shadow-xl hover:scale-105 transition-all"
+          onclick="changeDiv('egypt')"
+        >
+          Egypt
+        </button>
+        <button
+          class="text-green-700 font-bold px-8 border-2 border-green-700 rounded-lg hover:text-white hover:bg-green-700 shadow-xl hover:scale-105 transition-all"
+          onclick="changeDiv('palestinian')"
+        >
+          Palestinian
+        </button>
+        <button
+          class="text-green-700 font-bold px-8 border-2 border-green-700 rounded-lg hover:text-white hover:bg-green-700 shadow-xl hover:scale-105 transition-all"
+          onclick="changeDiv('emirates')"
+        >
+          Emirates
+        </button>
+        <button
+          class="text-green-700 font-bold px-8 border-2 border-green-700 rounded-lg hover:text-white hover:bg-green-700 shadow-xl hover:scale-105 transition-all"
+          onclick="changeDiv('lebanon')"
+        >
+          Lebanon
+        </button>
+
+        <button
+          class="text-white bg-red-600 hover:bg-red-800 font-bold px-8 rounded-lg shadow-xl transition-all"
+          onclick="removeDiv()"
+        >
+          Remove Cites
+        </button>
+      </div>
+      <!-- {/* city div */} -->
+      <div
+        id="cityDiv"
+        class="flex flex-col items-center justify-evenly p-12 mt-8 mb-20 mx-12 rounded-md bg-gray-700 text-white hidden"
+      >
+        <div class="mb-8">
+          <h1 id="header" class="text-3xl text-red-950"></h1>
+        </div>
+        <div class="mb-4">
+          <p id="paragraph" class="font-light text-lg tracking-wide"></p>
+        </div>
+        <div class="w-96 h-auto">
+          <img id="image" src="" alt="" />
+        </div>
+      </div>
+    </div>
+    <script src="cityData.js"></script>
+    <script src="index.js"></script>
+  </body>
+</html>
